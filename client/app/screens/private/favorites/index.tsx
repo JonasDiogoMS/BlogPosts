@@ -45,7 +45,7 @@ export default function FavoritesScreen() {
         />
       )}
 
-      <FAB testID="fab-button" onPress={() => router.push('/comments')}>
+      <FAB onPress={() => router.push('/comments')}>
         <Ionicons name="add" size={28} color="#fff" />
       </FAB>
 
