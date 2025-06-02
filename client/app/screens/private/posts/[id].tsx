@@ -125,9 +125,10 @@ export default function PostDetails() {
   return (
     <Container>
       <Header>
-        <BackButton onPress={() => router.back()}>
-          <Ionicons name="arrow-back" size={24} color="black" />
-        </BackButton>
+        <BackButton testID="back-button" onPress={() => router.back()}>
+  <Ionicons name="arrow-back" size={24} color="black" />
+</BackButton>
+
       </Header>
 
       <UserInfo>
@@ -167,7 +168,10 @@ export default function PostDetails() {
 
             <CommentText>{item.body}</CommentText>
             {isLocalComment && (
-              <DeleteButton onPress={() => handleDeleteComment(item.id)}>
+              <DeleteButton
+                testID={`delete-button-${item.id}`}
+                onPress={() => handleDeleteComment(item.id)}
+              >
                 <Ionicons name="trash" size={20} color="red" />
               </DeleteButton>
             )}

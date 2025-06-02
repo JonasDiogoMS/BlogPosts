@@ -1,10 +1,12 @@
 module.exports = {
   preset: 'jest-expo',
-  setupFiles: ['./jest.setup.js'],
+  setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
+
   transformIgnorePatterns: [
-    // Ignora tudo, exceto os pacotes abaixo (que são ESM e precisam ser transformados)
-    'node_modules/(?!(jest-)?@?react-native|@react-native-community|@expo|expo-modules-core|expo-modules-autolinking|react-native-gesture-handler|react-native-reanimated|react-native-safe-area-context|react-native-screens)/'
+    // Aqui dizemos ao Jest que “ignore tudo em node_modules,
+    // exceto os pacotes listados abaixo, que devem ser TRANSPILADOS”
+    'node_modules/(?!(expo|@expo|react-native|@react-native|expo-modules-core|expo-font|@expo/vector-icons|@react-navigation|@unimodules|unimodules)/)'
   ],
-  testPathIgnorePatterns: ['/node_modules/', '/android/', '/ios/'],
+
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
 };

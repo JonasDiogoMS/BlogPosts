@@ -9,9 +9,23 @@ export default function SignUpScreen() {
     <Container>
       <TitleText text="CADASTRO" />
 
-      <InputField label="Nome de usuário" placeholder="Nome de usuário" />
-      <InputField label="E-mail" placeholder="Endereço de e-mail" keyboardType="email-address" />
-      <InputField label="Senha" placeholder="Adicione uma senha" secureTextEntry />
+      <InputField
+        label="Nome de usuário"
+        placeholder="Nome de usuário"
+        testID="input-username"
+      />
+      <InputField
+        label="E-mail"
+        placeholder="Endereço de e-mail"
+        keyboardType="email-address"
+        testID="input-email"
+      />
+      <InputField
+        label="Senha"
+        placeholder="Adicione uma senha"
+        secureTextEntry
+        testID="input-password"
+      />
 
       <PrimaryButton text="Criar conta" />
     </Container>
