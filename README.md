@@ -131,7 +131,6 @@ eas build --platform ios
 
 ## 📞 Contato
 
-Desenvolvido por **jonasdiogo010@gmail.com**  
-Email: [jonasdiogo010@gmail.com](mailto:jonasdiogo010@gmail.com)
+Desenvolvido por **jonasdiogo010@gmail.com** 
 
 ---
