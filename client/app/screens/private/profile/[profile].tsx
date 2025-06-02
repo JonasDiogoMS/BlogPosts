@@ -62,7 +62,7 @@ export default function ProfileScreen() {
   return (
     <Container>
       <Header>
-        <BackButton onPress={() => router.back()}>
+        <BackButton testID="back-button" onPress={() => router.back()}>
           <Feather name="arrow-left" size={20} />
         </BackButton>
       </Header>

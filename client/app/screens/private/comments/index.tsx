@@ -37,9 +37,10 @@ const NewPostScreen = () => {
       <StatusBar barStyle="dark-content" />
 
       <Header>
-        <BackButton onPress={() => router.back()}>
-          <AntDesign name="close" size={24} color="black" />
-        </BackButton>
+        <BackButton testID="back-button" onPress={() => router.back()}>
+  <AntDesign name="close" size={24} color="black" />
+</BackButton>
+
         <HeaderTitle>Nova publicação</HeaderTitle>
       </Header>
 
