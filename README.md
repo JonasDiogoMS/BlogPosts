@@ -7,11 +7,11 @@ Este projeto é um aplicativo mobile desenvolvido com **React Native** utilizand
 
 ## 🚀 Funcionalidades Implementadas
 
-✅ Listagem de posts de uma API pública (JSONPlaceholder)  
-✅ Adição de novos posts personalizados  
-✅ Sistema de favoritos com persistência local usando AsyncStorage  
-✅ Sistema de comentários por post  
-✅ Estado global gerenciado com Redux para usuário fake, permitindo a criação de posts personalizados e persistência dos dados com AsyncStorage
+✅ Listagem de posts de uma API pública (JSONPlaceholder).  
+✅ Adição de novos posts personalizados.  
+✅ Sistema de favoritos com persistência local usando AsyncStorage.  
+✅ Sistema de comentários por post.  
+✅ Estado global gerenciado com Redux para usuário fake, permitindo a criação de posts personalizados e persistência dos dados com AsyncStorage.
 
 ---
 
