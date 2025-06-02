@@ -14,6 +14,7 @@ Este projeto é um aplicativo mobile desenvolvido com **React Native** utilizand
 ✅ Estado global gerenciado com Redux para usuário fake, permitindo a criação de posts personalizados e persistência dos dados com AsyncStorage
 
 ✅ Testes Unitários.
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
