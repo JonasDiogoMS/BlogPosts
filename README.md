@@ -12,6 +12,7 @@ Este projeto é um aplicativo mobile desenvolvido com **React Native** utilizand
 ✅ Sistema de favoritos com persistência local usando AsyncStorage.  
 ✅ Sistema de comentários por post.  
 ✅ Estado global gerenciado com Redux para usuário fake, permitindo a criação de posts personalizados e persistência dos dados com AsyncStorage.
+
 ✅ Otimizações e abrangências em buscas(ex: Like Search).
 ✅ Paginação para carregar os posts da tela inicial.
 ✅ Testes Unitários.
