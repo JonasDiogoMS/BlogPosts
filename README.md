@@ -31,6 +31,7 @@ Este projeto é um aplicativo mobile desenvolvido com **React Native** utilizand
 
 - **React Native** — desenvolvimento mobile
 - **Expo** — simplificação do ambiente React Native
+- **Styled-components** — estilização de componentes usando CSS dentro do JavaScript
 - **Redux** — gerenciamento de estado
 - **AsyncStorage** — persistência local
 - **TypeScript** — tipagem estática
