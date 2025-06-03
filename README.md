@@ -61,7 +61,7 @@ git clone https://github.com/seu-usuario/appblog.git
 2. Acesse a pasta do projeto:
 
 ```bash
-cd appblog
+cd client
 ```
 
 3. Instale as dependências:
@@ -88,6 +88,7 @@ expo start
 - `"react-redux"`
 - `"redux"`
 - `"expo"`
+- `"styled-components"`
 - `"react-native"`
 
 ---
@@ -98,6 +99,7 @@ expo start
 - ⭐ Sistema de favoritos
 - 💬 Comentários em posts
 - 💾 Persistência local com AsyncStorage
+- ❌ Deletar comentário do usuário
 
 ---
 
