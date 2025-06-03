@@ -125,9 +125,8 @@ export default function PostDetails() {
     <Container>
       <Header>
         <BackButton testID="back-button" onPress={() => router.back()}>
-  <Ionicons name="arrow-back" size={24} color="black" />
-</BackButton>
-
+          <Ionicons name="arrow-back" size={24} color="black" />
+        </BackButton>
       </Header>
 
       <UserInfo>
@@ -157,7 +156,7 @@ export default function PostDetails() {
             params: { 
               name: item.name, 
               email: item.email, 
-              userId: post.userId.toString() 
+              userId: isLocalComment ? '0' : post.userId.toString()
             } 
           })}
           >
