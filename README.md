@@ -17,6 +17,8 @@ Este projeto é um aplicativo mobile desenvolvido com **React Native** utilizand
 
 ✅ Estado global gerenciado com Redux para usuário fake, permitindo a criação de posts personalizados e persistência dos dados com AsyncStorage.
 
+✅ Gerenciamento de estado com Context API para consumo da API (https://jsonplaceholder.typicode.com) e criação de funções.
+
 ✅ Otimizações e abrangências em buscas(ex: Like Search).
 
 ✅ Paginação para carregar os posts da tela inicial.
