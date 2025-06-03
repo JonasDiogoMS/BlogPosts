@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FlatList } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
 import { Feather } from '@expo/vector-icons';
-
 import { Container, Header, BackButton, InfoText } from './style';
-
 import { usePosts } from '../../../../context/PostsContext';
-
 import { ProfileHeader } from '../../../../components/ProfileHeader';
 import { ProfilePostCard } from '../../../../components/ProfilePostCard';
 

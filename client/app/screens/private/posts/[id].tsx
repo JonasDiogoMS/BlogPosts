@@ -3,7 +3,6 @@ import { FlatList, Alert, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Ionicons } from '@expo/vector-icons';
 import { useLocalSearchParams, router } from 'expo-router';
-
 import { usePosts } from '../../../../context/PostsContext';
 
 import {

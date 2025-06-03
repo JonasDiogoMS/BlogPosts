@@ -9,7 +9,7 @@ type CommentType = {
   body: string;
 };
 
-type PostType = {
+export type PostType = {
   userId: number;
   email: string;
   id: string;
@@ -157,25 +157,44 @@ export const PostsProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
-  const addComment = (postId: string, commentBody: string) => {
-    setPosts(prevPosts =>
-      prevPosts.map(post =>
-        post.id === postId
-          ? {
-              ...post,
-              comments: [
-                ...(post.comments ?? []),
-                {
-                  id: Date.now().toString(),
-                  name: fakeUser.name,
-                  body: commentBody
-                }
-              ]
-            }
-          : post
-      )
-    );
+  const addComment = async (postId: string, commentBody: string) => {
+  const newComment = {
+    id: Date.now().toString(),
+    name: fakeUser.name,
+    body: commentBody
   };
+
+  const updatedPosts = posts.map(post =>
+    post.id === postId
+      ? {
+          ...post,
+          comments: [...(post.comments ?? []), newComment]
+        }
+      : post
+  );
+
+  setPosts(updatedPosts);
+
+  // Atualiza os posts personalizados no AsyncStorage
+  try {
+    const existing = await AsyncStorage.getItem(POSTS_STORAGE_KEY);
+    const existingPosts = existing ? JSON.parse(existing) : [];
+
+    const updatedCustomPosts = existingPosts.map((post: PostType) =>
+      post.id === postId
+        ? {
+            ...post,
+            comments: [...(post.comments ?? []), newComment]
+          }
+        : post
+    );
+
+    await AsyncStorage.setItem(POSTS_STORAGE_KEY, JSON.stringify(updatedCustomPosts));
+  } catch (error) {
+    console.error('Erro ao salvar comentário personalizado:', error);
+  }
+};
+
 
   return (
     <PostsContext.Provider
